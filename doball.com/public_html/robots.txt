@@ -1,0 +1,7 @@
+# Robots Fixed
+# Design For Gootum
+# https://www.doball.com/
+# Contact  doball_2016@hotmail.com 
+
+User-agent: *
+

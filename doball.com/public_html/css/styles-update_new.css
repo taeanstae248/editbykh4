@@ -1,0 +1,57 @@
+/* 
+    Created on : Mar 8, 2016, 12:47:17 PM
+    Author     : wonderkide
+*/
+
+header .reload-btn-container .reload-btn.lang-1{
+    background: transparent url("../img/reload-btn-1.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+header .reload-btn-container .reload-btn.lang-2{
+    background: transparent url("../img/reload-btn-2.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+header .reload-btn-container .reload-btn.lang-3{
+    background: transparent url("../img/reload-btn-3.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header .reload-btn-container .reload-btn.lang-1:hover{
+    background: transparent url("../img/reload-btn-hover-1.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+header .reload-btn-container .reload-btn.lang-2:hover{
+    background: transparent url("../img/reload-btn-hover-2.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+header .reload-btn-container .reload-btn.lang-3:hover{
+    background: transparent url("../img/reload-btn-hover-3.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.box-league-ch .row-match p, .box-league-ch .row-match a {
+    border-right: 2px solid #000000;
+    font: lighter 1em/40px DINCondensed;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+}

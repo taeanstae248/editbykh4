@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-control" content="public">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Responsive Retina-Friendly Menu with different, size-dependent layouts" />
+    <meta name="keywords" content="responsive menu, retina-ready, icon font, media queries, css3, transition, mobile" />
+    <meta name="author" content="Codrops" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <title>Linedoball.com เว็บไซต์รวมลิงค์ดูบอลออนไลน์ผ่านเน็ตฟรี ภาพคมชัดระดับHD ไม่กระตุก ครบทุกคู่ ทุกลีกดัง</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link href="css/cssmenu.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles_new.css">
+    <link rel="stylesheet" href="css/styles-update_new.css">
+</head>
+<body>
+
+    
+		<style>
+	body{    
+		line-height: 1.7;
+		/*background: url('img/bg555.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;*/
+	}
+	img.linktag{
+		height: 25px;
+	} 
+	.box-no-padding{
+		padding-left:0;
+		padding-right:0;
+	}
+	
+	.bg_blue{
+		    color: #eee;
+		background-color: #3696e8 ;
+	}
+	/*.main-menu div.main-menu-navbar a, .main-menu div.main-menu-navbar a {
+		color: #fff;
+	}
+	.main-menu div.main-menu-navbar a:hover, .main-menu div.main-menu-navbar a.active {
+		background-color: #3ba5ff;
+		color: #fff;
+	}
+	.box3{
+		background-color: #3696e8;
+		    color: #dcdcdc;
+	}*/
+	@media screen and (min-width: 768px){
+		header {
+			padding: 10px 0 10px 0 !important;
+		}
+	}
+	header .reload-btn-container {
+		padding-top: 10px;
+	}
+	.head-box{
+		background-color: #353535;
+	}
+	.box-foot{
+		background-color: transparent;
+	}
+
+	.match_remove{
+		display: none !important;
+	}
+	.match_end{
+		background-color: #d50000;
+	}
+	.blink_me {
+		-webkit-animation-name: blinker;
+		-webkit-animation-duration: 1s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-iteration-count: infinite;
+
+		-moz-animation-name: blinker;
+		-moz-animation-duration: 1s;
+		-moz-animation-timing-function: linear;
+		-moz-animation-iteration-count: infinite;
+
+		animation-name: blinker;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	}
+
+	@-moz-keyframes blinker {  
+		0% { opacity: 1.0; }
+		50% { opacity: 0.0; }
+		100% { opacity: 1.0; }
+	}
+
+	@-webkit-keyframes blinker {  
+		0% { opacity: 1.0; }
+		50% { opacity: 0.0; }
+		100% { opacity: 1.0; }
+	}
+
+	@keyframes blinker {  
+		0% { opacity: 1.0; }
+		50% { opacity: 0.0; }
+		100% { opacity: 1.0; }
+	}
+	.box-foot{
+		margin-top: 20px;
+		
+	}
+	.text-black{
+		color:#353535;
+	}
+
+    /* jplayer */
+    .jp-video video, .jp-audio, .jp-controls-holder {
+        width: 100% !important;
+		height: auto !important;
+    }
+
+   .jp-jplayer,.jp-video, .jp-video > div, .jp-video img {
+       height: auto !important;
+       width: 100% !important;
+   }
+
+   .jp-video-360p {
+       max-width: 100% !important;
+   }
+
+   .jp-video-270p {
+       max-width: 100% !important;
+   }
+
+   .jp-progress {
+       width: 100%;
+   }
+
+
+	
+</style>
+<header class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-4 reload-btn-container">
+			<div class="col-xs-2"><img src="img/facebook-2.png" /></div> 
+			<div class="col-xs-10 text-left"><a class="no-margin" href="https://www.facebook.com/doballyoutube" target="_blank">ดูบอลสด ดูบอลออนไลน์ << คลิ๊กลิ้งติดตามเพจ</a></div> 
+		</div>  
+		<div class="col-xs-12 col-sm-6 col-md-4 reload-btn-container">
+			<div class="col-xs-2"><img src="img/line.png" style=""></div> 
+			<div class="col-xs-10 text-left"><a class="no-margin" href="http://line.me/ti/p/%40doball" target="_blank">@DOBALL << กดลิ้งเพื่อรับลิ้งทางมือถือ</a></div> 
+		</div>  
+		<div class="col-xs-12 col-sm-12 col-md-4 reload-btn-container">
+			<input value="" onclick="javascript:location.reload();" type="button" class="reload-btn lang-1" style="padding:0px;" />
+		</div>
+	</div>  
+	<div class="col-md-12 center"> <a href="http://linedoball.com"><img src="img/logo-doballfree.png"></a></div>
+</header>
+<!-- end: Header -->
+<div class="container main-menu">
+	<div class="row">
+		<nav class="col-xs-12 bg_orange no-padding">
+			<a href="javascript:void(0);" class="pull">MENU <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+			<div class="main-menu-navbar">
+				<a class="hide-menu col-count-5" href="http://linedoball.com">รวมลิงค์ทุกคู่</a>
+				<a class="hide-menu col-count-5" href="http://linedoball.com">ตารางถ่ายทอดสด</a>
+				<a class="hide-menu col-count-5" href="javascript:void(0);">เว็บบอร์ด</a>
+				<a class="hide-menu col-count-5" href="javascript:void(0);">ไฮไลท์ ฟุตบอล</a>
+			</div>
+		</nav>
+	</div>
+</div>
+
+
+<!-- start: marquee -->
+ <div class="container">
+<div class="row box">
+    <marquee scrollamount="3">อยู่นอกบ้านก็ดูบอลได้!! ดูบอลสดออนไลน์ฟรีบนมือถือของคุณ Linedoball.com เว็บไซต์รวมลิงค์ดูบอลออนไลน์ผ่านเน็ตฟรี ภาพคมชัดระดับHD ไม่กระตุก ครบทุกคู่ ทุกลีกดัง</marquee>
+</div>
+<style>
+  
+.myIframe {
+	display:none;
+	position: relative;
+	padding-bottom: 65.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: auto; 
+	-webkit-overflow-scrolling:touch;
+	border:none;
+} 
+.myIframe iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border:none;
+}
+.myVideo 
+{
+	display:block;
+    height:100% !important;
+    width:100% !important;
+}
+.myVideo video 
+{
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+</style>
+<br>
+<div style="text-align:center;position:relative;">
+﻿    <div class='myIframe' id="myIframe" > 
+		<iframe data-src="" src="about:blank" allowfullscreen="true" id="iFrame" ></iframe>
+	</div>
+	<div class="myVideo" id="jquery_jplayer_1">
+      
+    </div>
+</div>
+        <!--<section id="channel-match" class="container bg_darkgrey padtb-50">
+        <div class="col-sm-4 no-padding team-name home">
+            &nbsp;
+        </div>
+        <div class="col-sm-4 no-padding tcenter date-time-box">
+            <p class="null-stream">ขณะนี้ยังไม่มีการถ่ายทอดสด!!</p>
+        </div>
+        <div class="col-sm-4 no-padding team-name away">
+            &nbsp;
+        </div>
+    </section>-->
+
+
+    <!-- start: footer -->
+    <footer class="box-foot">
+        <div class="row con-mar center">
+            Linedoball.com เว็บไซต์ดูบอลสดออนไลน์ผ่านเน็ตกันแบบฟรีๆ ภาพชัดระดับ HD ไม่มีกระตุก ถ่ายทอดฟุตบอลสดครบทุกลีกดังระดับโลก<br>
+
+            © 2016 LINEDOBALL. ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+    <!-- end: footer -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+
+
+    <!-- start: JavaScript --> 
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/cssmenu.js"></script>
+    <script src="js/common1.js"></script>
+    <script src="js/jPlayer-2.9.2/dist/jplayer/jquery.jplayer.min.js"></script>
+	<script src="//api.peer5.com/peer5.js?id=4ttt82v2d01275wt7blv"></script>
+    <script src="//api.peer5.com/jwplayer7.js"></script>
+    <script src="//api.peer5.com/peer5.jwplayer7.plugin.js"></script>
+
+    <script>jwplayer.key='U+YD69Vou/euGZr3mTwJc/qfWvqql/vU0OEMMA==';</script>
+
+    <script>
+    /*  jwplayer('player').setup({
+        width: "100%",
+        aspectratio: "16:9",
+        //plugins: ybPlugin,
+		//mediaid: "MEDIAID",
+			file: "http://www.linedoball.com/assets/apple.mp4",
+      });*/
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-83608519-1', 'auto');
+      ga('send', 'pageview');
+	  
+	 $(document).ready(function(){
+		 /* $("#myVideo").jPlayer({
+		   ready: function () {
+			$(this).jPlayer("setMedia", {
+			 m4a: "/assets/football.mp4",
+			 oga: "/assets/football.ogv"
+			});
+		   },
+		   swfPath: "/js",
+		   supplied: "m4a, oga"
+		  });*/
+	  
+	  $("#jquery_jplayer_1").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            m4v: "http://128.199.231.175/football.mp4",
+            ogv: "assets/football.ogv"
+          }).jPlayer("play");
+        },
+        cssSelectorAncestor: "#jp_container_1",
+        swfPath: "/js/jPlayer-2.9.2/dist/jplayer/",
+        supplied: "m4v, ogv",
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true,
+        remainingDuration: true,
+        toggleDuration: true,
+		autoplay: true,
+		ended: function() {
+            showsteam();
+        }
+      });
+	  
+	 });
+	function showsteam(){
+		$("#jquery_jplayer_1").css('display','none');
+		$("#myIframe").css('display','block');
+		var iframe = $("#iFrame");
+		var src = 'http://live.linedoball.com/channel.php?ch=ch1'
+		iframe.attr("src", src); 
+	}
+    </script>
+
+
+    <!-- end: JavaScript --> 
+
+</body>
+</html>

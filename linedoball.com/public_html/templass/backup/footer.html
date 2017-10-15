@@ -1,0 +1,139 @@
+<footer class="main-footer">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-6">
+                  <p>Your company © 2017-2019</p>
+                </div>
+                <div class="col-sm-6 text-right">
+                  <p>Design by <a href="#" class="external">Kh4</a></p>
+                  <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- Javascript files-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js" type="text/javascript"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.js"></script>
+          <script src="../js/tether.min.js"></script>
+          <script src="../js/bootstrap.min.js"></script>
+          <script src="../js/jquery.cookie.js"> </script>
+          <script src="../js/jquery.validate.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+          <script src="../js/charts-home.js"></script>
+          <script src="../js/front.js"></script>
+          <!--chosen-->
+          <script src="../js/chosen.jquery.js" type="text/javascript"></script>
+          <script src="../js/prism.js" type="text/javascript" charset="utf-8"></script>
+            <script src="../js/init.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+
+          <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
+          <!---->
+          <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+
+              $('#match_date_time').datetimepicker({
+                  format:"Y-m-d H:i",
+                  allowTimes:[
+                      '00:00', '00:15', '00:30', '00:45', '01:00', '01:15', '01:30', '01:45',
+                      '02:00', '02:15', '02:30', '02:45', '03:00', '03:15', '03:30', '03:45',
+                      '04:00', '04:15', '04:30', '04:45', '05:00', '05:15', '05:30', '05:45',
+                      '06:00', '06:15', '06:30', '06:45', '07:00', '07:15', '07:30', '07:45',
+                      '08:00', '08:15', '08:30', '08:45', '09:00', '09:15', '09:30', '09:45',
+                      '10:00', '10:15', '10:30', '10:45', '11:00', '11:15', '11:30', '11:45',
+                      '12:00', '12:15', '12:30', '12:45', '13:00', '13:15', '13:30', '13:45',
+                      '14:00', '14:15', '14:30', '14:45', '15:00', '15:15', '15:30', '15:45',
+                      '16:00', '16:15', '16:30', '16:45', '17:00', '17:15', '17:30', '17:45',
+                      '18:00', '18:15', '18:30', '18:45', '19:00', '19:15', '19:30', '19:45',
+                      '20:00', '20:15', '20:30', '20:45', '21:00', '21:15', '21:30', '21:45',
+                      '22:00', '22:15', '22:30', '22:45', '23:00', '23:15', '23:30', '23:45',
+               ],
+              });
+            </script>
+
+            <script>/*
+             $('#xlistteame').click(function(){
+                $('.xteame').append('<li class="list-group-item">test</li>');
+
+             });*/
+              </script>
+              <script>
+
+                    $(function(){
+                      $("#id_teams").change(function(){
+                              var pid = $(this).val();
+                              // alert(pid);
+            $.get("showeteameselect.php",{pvid: pid},function(data){
+                          //  alert(data);
+                $("#homes").children().remove().end();
+                $("#homes").children().end().append(data);
+
+                $("#homes").removeAttr('disabled');
+      });  });  });
+
+      $(function(){
+        $("#id_teams").change(function(){
+                var pid = $(this).val();
+                // alert(pid);
+      $.get("showeteameselect.php",{pvid: pid},function(data){
+            // alert(data);
+      $("#away").children().remove().end();
+      $("#away").children().end().append(data);
+      $("#away").removeAttr('disabled');
+      });  });  });
+
+
+                          </script>
+
+                          <script>
+                            paceOptions = {
+                              elements: true
+                            };
+                          </script>
+
+                          <script>
+                            function load(time){
+                              var x = new XMLHttpRequest()
+                              x.open('GET', "http://localhost:5646/walter/" + time, true);
+                              x.send();
+                            };
+
+                            load(20);
+                            load(100);
+                            load(500);
+                            load(2000);
+                            load(3000);
+
+                            setTimeout(function(){
+                              Pace.ignore(function(){
+                                load(3100);
+                              });
+                            }, 4000);
+
+                            Pace.on('hide', function(){
+                              console.log('done');
+                            });
+                          </script>
+
+                        <body>
+                          <input id="range" type="range" min="0" max="100">
+                          <script>
+                            range.addEventListener('input', function(){
+                              document.querySelector('.pace').classList.remove('pace-inactive');
+                              document.querySelector('.pace').classList.add('pace-active');
+
+                              document.querySelector('.pace-progress').setAttribute('data-progress-text', range.value + '%');
+                              document.querySelector('.pace-progress').setAttribute('style', '-webkit-transform: translate3d(' + range.value + '%, 0px, 0px)');
+                            });
+                          </script>
+
+          </body>
+          </html>

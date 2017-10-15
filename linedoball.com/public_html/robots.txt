@@ -1,0 +1,7 @@
+# Robots Fixed
+# Design For Gootum
+# https://www.linedoball.com/
+# Contact  linedoball2017@gmail.com
+
+User-agent: *
+

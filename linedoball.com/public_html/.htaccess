@@ -1,0 +1,30 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^linedoball\.com$ [NC]
+RewriteRule ^(.*)$ http://www.linedoball.com/$1 [R=301,L]
+
+
+
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+#โปรแกรมบอล
+RewriteRule โปรแกรมบอล/$ tablefootball.php [L]
+RewriteRule โปรแกรมบอล$ โปรแกรมบอล/ [R]
+
+#ผลบอล
+RewriteRule ผลบอล/$ scorefootball.php [L]
+RewriteRule ผลบอล$ ผลบอล/ [R]
+
+#ติดต่อเรา
+RewriteRule ติดต่อเรา/$ calls.php [L]
+RewriteRule ติดต่อเรา$ ติดต่อเรา/ [R]
+
+#ดูบอลออนไลน์
+RewriteRule ดูบอลออนไลน์/$ ballch.php [L]
+RewriteRule ดูบอลออนไลน์$ ดูบอลออนไลน์/ [R]
